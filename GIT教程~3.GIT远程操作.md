@@ -1,19 +1,24 @@
 ---
-title: GIT|1. G
-date: 2018-02-02 14:37:40
+title: GIT|GIT教程~3.GIT远程操作
+date: 2019-01-01 00:00:03
 tags: code
-categories: Python
+categories: GIT
 ---
+<p align="center"><font face="微软雅黑" color=DarkGoldenRod size="8">GIT教程~3.GIT远程操作</font>
 
-<p align="center"><font face="微软雅黑" color=DarkGoldenRod size="8">GIT教程~1.GIT安装配置</font>
-
-> ## 第一部分
-### Git基础轿车被v
-
-
-> git config --global user.name "datsci"  
-> git config --global user.email "datscicn@gmail.com"
-
- cd ./DATSCI
- git init
-
+> 一、流程概览
+1. 查看已有远程仓库
+git remote -v
+2. 远程仓库建立
+3. 连接至多个远程仓库
+```
+git remote add origin git@github.com:datscicn/learn_git.git
+git remote add origin_gitee git@gitee.com:datscicn/learn_git.git
+git remote add origin_wacai git@git.caimi-inc.com:longding/learn_git.git
+```
+4. 远程
+```
+git push -u origin master
+git push -u origin_gitee master
+git push -u origin_wacai master
+```

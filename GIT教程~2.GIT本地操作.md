@@ -6,15 +6,15 @@ categories: GIT
 ---
 <p align="center"><font face="微软雅黑" color=DarkGoldenRod size="8">GIT教程~2.GIT本地操作</font>
 
-> 一、本地新建
+> 一、流程概览
 1. 新建工作目录`learn_git`，并进入
-
-
-
-
-> git config --global user.name "datsci"  
-> git config --global user.email "datscicn@gmail.com"
-
- cd ./DATSCI
- git init
-
+cd ./learn_git
+2. 建立本地仓库
+```
+git init
+```
+3.建立本地分支
+```
+git add .  
+git commit -m '第一次提交'
+```
